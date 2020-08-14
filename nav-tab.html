@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="output.css">
+    <!-- FontAwesome 6 -->
+    <script src="https://kit.fontawesome.com/da3bede729.js" crossorigin="anonymous"></script>
+    <!-- Add js class to html -->
+
+    <title>Nav Tabs with Tailwind and Javascript</title>
+
+  </head>
+
+  <body>
+    <div class="container mx-auto">
+        <div id="content-tab-cantores" class="section-tabs py-4">
+            <ul class="flex border-b" data-tab="list" id="myTab">
+                <li class="-mb-px mr-1">
+                    <!-- Create classe Active @apply border-l border-t border-r rounded-t; -->
+                    <a href="#julio" class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold active" id="julio-tab">Júlio Nascimento</a>
+                </li>
+                <li class="mr-1">
+                    <a href="#frankito" class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" id="frankito-tab">Frankito Lopes</a>
+                </li>
+                <li class="mr-1">
+                    <a href="#sandro" class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" id="sandro-tab">Sandro Lúcio</a>
+                </li>
+            </ul>
+
+            <div class="tab-content bg-gray-100 p-2" data-tab="content" id="myTabContent">
+                <div class="tab-pane active py-3" id="julio" data-anime="show-right" aria-labelledby="julio-tab">
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="col-span-1">
+                            <img src="img/cantores/julio_nascimento_480x480.jpg" alt="Júlio Nascimento">
+                        </div>
+                        <div class="col-span-2">
+                            <h2 class="text-3xl font-bold">Júlio Nascimento</h2>
+                            <p class="my-3">
+                                Eu fui ao garimpo</br>
+                                E deixei a minha mulher</br>
+                                Ela entregou</br>
+                                O amor pra quem quiser</br>
+                                Eu estava trabalhando</br>
+                                Trabalhei com muita fé</br>
+                                Arrumei muito dinheiro</br>
+                                E mandei pra minha mulher</br>
+                                Ela foi gastar com os homens</br>
+                                Lá no Cabaré
+                            </p>
+                            <a target="_blank" rel="noreferer" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mt-auto" href="https://www.ouvirmusica.com.br//julio-nascimento/">
+                                <i class="fas fa-music mr-2"></i>Ouvir músicas
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane py-3" id="frankito" data-anime="show-right" aria-labelledby="frankito-tab">
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="col-span-1">
+                            <img src="img/cantores/frankito_lopes_600x600.jpg" alt="Frankito Lopes">
+                        </div>
+                        <div class="col-span-2">
+                            <h2 class="text-3xl font-bold">Frankito Lopes</h2>
+                            <p class="my-3">
+                                Cleide, minha querida</br>
+                                Você é a minha vida</br>
+                                Não consigo lhe esquecer</br>
+                                Cleide, quando canto</br>
+                                Estou chorando</br>
+                                Quando durmo estou sonhado</br>
+                                Sonhando com você</br>
+                            </p>
+                            <a target="_blank" rel="noreferer" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" href="https://www.suamusica.com.br/sneijdercds/frankito-lopes-o-indio-apaixonado-as-melhores">
+                                <i class="fas fa-music mr-2"></i>Ouvir músicas
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane py-3" id="sandro" data-anime="show-right" aria-labelledby="sandro-tab">
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="col-span-1">
+                            <img src="img/cantores/sandro_lucio_320x320.jpg" alt="Sandro Lúcio">
+                        </div>
+                        <div class="col-span-2">
+                            <h2 class="text-3xl font-bold">Sandro Lúcio</h2>
+                            <p class="my-3">
+                                Te amar foi um erro</br>
+                                Foi um erro te amar</br>
+                                Mas eu erro outra vez</br>
+                                Se acaso precisar</br>
+                                Por você não me arrependo</br>
+                                Das loucuras que já fiz</br>
+                                Por você estou sofrendo</br>
+                                Te amar me faz feliz
+                            </p>
+                            <a target="_blank" rel="noreferer" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" href="https://www.ouvirmusica.com.br//sandro-lucio/">
+                                <i class="fas fa-music mr-2"></i>Ouvir músicas
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="nav-tab.js"></script>  
+  </body>
+</html>
