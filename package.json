@@ -2,15 +2,13 @@
   "name": "00-nav-tabs",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
-  "dependencies": {
-    "open-browser-webpack-plugin": "^0.0.5",
-    "tailwindcss": "^1.6.2"
-  },
-  "devDependencies": {},
+  "main": "tailwind.conf.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.6.2"
+  }
 }
