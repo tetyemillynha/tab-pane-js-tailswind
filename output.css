@@ -629,6 +629,30 @@ video {
   color: rgba(43, 108, 176, var(--text-opacity));
 }
 
+.nav{
+  display: flex;
+}
+
+.nav-tabs {
+  border-bottom-width: 1px;
+}
+
+.nav-tabs .nav-item{
+  margin-bottom: -1px;
+  margin-right: 0.25rem;
+}
+
+.nav-tabs .nav-link{
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));

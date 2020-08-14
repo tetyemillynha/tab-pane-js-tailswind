@@ -2,9 +2,26 @@
 
 @tailwind components;
 
-.section-tabs a.active{
-    @apply border-l border-t border-r rounded-t text-blue-700;
+.nav{
+    @apply flex;
 }
+
+.nav-tabs {
+    @apply border-b;
+}
+
+.nav-tabs .nav-item{
+    @apply -mb-px mr-1;
+}
+
+.nav-tabs .nav-link{
+    @apply bg-white inline-block py-2 px-4;
+}
+
+.nav-tabs .nav-link.active{
+    @apply border-l border-t border-r rounded-t font-semibold;
+}
+
 
 @tailwind utilities;
 
