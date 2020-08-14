@@ -13,7 +13,7 @@ function getSiblings(elem){
 
 function initTabNav() {
   // get tab list items
-  const tabList = document.querySelectorAll('[data-tab="list"] li a');
+  const tabList = document.querySelectorAll('[data-tab="tablist"] li a');
   // get tab pane content items
   const tabContent = document.querySelectorAll('[data-tab="content"] .tab-pane');
   if(tabList.length && tabContent.length) {
